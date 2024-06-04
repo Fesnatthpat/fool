@@ -14,11 +14,23 @@ export default function Navtop() {
             <nav className="bg-gray-900 p-2 fixed start-0 end-0 top-0 right-0 z-10">
                 <div className="flex items-center justify-between px-5">
 
-                {/* Avatar */}
-                    <div className="avatar placeholder md:hidden">
-                        <div className="bg-neutral text-neutral-content rounded-full w-12">
-                            <span>SY</span>
+                    {/* Avatar */}
+                    <div className="dropdown dropdown-end md:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder">
+                            <div className="bg-neutral text-neutral-content rounded-full w-12">
+                                <span>SY</span>
+                            </div>
                         </div>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <a className="justify-between">
+                                    Profile
+                                    <span className="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
                     </div>
 
                     {/* Logo */}
@@ -35,10 +47,22 @@ export default function Navtop() {
                         <li className='btn btn-ghost'><a href="#" className="text-white">About</a></li>
                         <li className='btn btn-ghost'><a href="#" className="text-white">Services</a></li>
                         <li className='btn btn-ghost'><a href="#" className="text-white">Contact</a></li>
-                        <div className="avatar placeholder">
-                            <div className="bg-neutral text-neutral-content rounded-full w-12">
-                                <span>SY</span>
+                        <div className="dropdown dropdown-end">
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder">
+                                <div className="bg-neutral text-neutral-content rounded-full w-12">
+                                    <span>SY</span>
+                                </div>
                             </div>
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <a className="justify-between">
+                                        Profile
+                                        <span className="badge">New</span>
+                                    </a>
+                                </li>
+                                <li><a>Settings</a></li>
+                                <li><a>Logout</a></li>
+                            </ul>
                         </div>
                     </ul>
                 </div>
