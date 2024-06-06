@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import Login from "./Login"
 
 export default function Hero() {
     return (
@@ -8,7 +9,8 @@ export default function Hero() {
                 <div>
                     <h1 className="text-5xl font-bold">Box Office News!</h1>
                     <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <button className="btn btn-primary" onClick={()=>document.getElementById('my_modal_1').showModal()}>Log In</button>
+                    <Login />
                 </div>
             </div>
         </div>
