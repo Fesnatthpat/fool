@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Profile() {
     return (
-        <div className="flex justify-center py-20">
+        <div className="flex justify-center min-h-screen py-20">
             <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/3 bg-gray-900 p-6 md:p-10 rounded-xl m-5">
                 <div className="flex justify-center items-center">
                     <div className="w-24 rounded-full avatar online">
