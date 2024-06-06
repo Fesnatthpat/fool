@@ -3,17 +3,19 @@ import Navtop from './Components/Navtop'
 import './App.css'
 import Hero from './Components/Hero'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Profile from './Components/Profile'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
       <>
         <Navtop />
+        
         <Routes>
-          {/* <Route path='/' element={<Navtop />} /> */}
           <Route path='/' element={<Hero />} />
+          <Route path="/profile1" element={<Profile />} />
         </Routes>
       </>
     </BrowserRouter>
