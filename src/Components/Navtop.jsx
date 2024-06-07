@@ -27,7 +27,7 @@ export default function Navtop() {
                                     <div className="justify-between">
                                         Profile11
                                         <span className="badge">New</span>
-                                    </div>>
+                                    </div>
                                 </Link>
                             </li>
                             <li><a>Settings</a></li>
