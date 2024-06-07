@@ -24,10 +24,10 @@ export default function Navtop() {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li>
                                 <Link to={"/profile1"}>
-                                    
+                                    <a className="justify-betwee">
                                         Profile
                                         <span className="badge">New</span>
-                                    
+                                    </a>
                                 </Link>
                             </li>
                             <li><a>Settings</a></li>
@@ -58,7 +58,9 @@ export default function Navtop() {
                     {/* Menu for Laptop */}
                     <ul className="hidden md:flex space-x-4">
                         <li className='btn btn-ghost'><a href="#" className="text-white">Home</a></li>
-                        <li className='btn btn-ghost'><a href="#" className="text-white">About</a></li>
+                        <Link to={"/product1"}>
+                            <li className='btn btn-ghost'><a href="#" className="text-white">Product</a></li>
+                        </Link>
                         <li className='btn btn-ghost'><a href="#" className="text-white">Services</a></li>
                         <li className='btn btn-ghost'><a href="#" className="text-white">Contact</a></li>
                         <div className="dropdown dropdown-end">
@@ -70,10 +72,10 @@ export default function Navtop() {
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
                                     <Link to={"/profile1"}>
-                                        
+                                        <a className="justify-betwee">
                                             Profile
                                             <span className="badge">New</span>
-                                    
+                                        </a>
                                     </Link>
                                 </li>
                                 <li><a>Settings</a></li>

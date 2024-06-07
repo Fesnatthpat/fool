@@ -5,7 +5,7 @@ export default function Profile() {
         <div className="flex justify-center min-h-screen py-20">
             <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 xl:w-1/3 bg-gray-900 p-6 md:p-10 rounded-xl m-5">
                 <div className="flex justify-center items-center">
-                    <div className="w-24 rounded-full avatar online">
+                    <div className="w-24 rounded-full avatar online z-0 ">
                         <img className="rounded-full" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                     </div>
                 </div>
