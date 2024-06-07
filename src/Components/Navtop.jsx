@@ -25,7 +25,7 @@ export default function Navtop() {
                             <li>
                                 <Link to={"/profile1"}>
                                     
-                                        Profile11
+                                        Profile
                                         <span className="badge">New</span>
                                     
                                 </Link>
@@ -71,7 +71,7 @@ export default function Navtop() {
                                 <li>
                                     <Link to={"/profile1"}>
                                         
-                                            Profile11
+                                            Profile
                                             <span className="badge">New</span>
                                     
                                     </Link>
