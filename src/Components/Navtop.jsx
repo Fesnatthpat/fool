@@ -24,10 +24,10 @@ export default function Navtop() {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li>
                                 <Link to={"/profile1"}>
-                                    <div className="justify-between">
+                                    
                                         Profile11
                                         <span className="badge">New</span>
-                                    </div>
+                                    
                                 </Link>
                             </li>
                             <li><a>Settings</a></li>
@@ -70,10 +70,10 @@ export default function Navtop() {
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
                                     <Link to={"/profile1"}>
-                                        <div className="justify-between">
+                                        
                                             Profile11
                                             <span className="badge">New</span>
-                                        </div>
+                                    
                                     </Link>
                                 </li>
                                 <li><a>Settings</a></li>
