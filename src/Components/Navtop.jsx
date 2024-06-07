@@ -25,7 +25,7 @@ export default function Navtop() {
                             <li>
                                 <Link to={"/profile1"}>
                                     <div className="justify-between">
-                                        Profile
+                                        Profile1
                                         <span className="badge">New</span>
                                     </div>>
                                 </Link>
@@ -71,7 +71,7 @@ export default function Navtop() {
                                 <li>
                                     <Link to={"/profile1"}>
                                         <divclassName="justify-between">
-                                            Profile
+                                            Profile1
                                             <span className="badge">New</span>
                                         </div>
                                     </Link>
