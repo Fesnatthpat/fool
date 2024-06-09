@@ -90,7 +90,7 @@ export default function Navtop() {
                 {/* Menu for Mobile */}
                 {isMenuOpen ? (
                     <ul className="flex-col md:hidden px-5 text-center">
-                        <li className='py-2'><a href="#" className="text-white btn btn-ghost" onClick={closeMenu}>Home</a></li>
+                        <li className='py-2'><a href="/" className="text-white btn btn-ghost" onClick={closeMenu}>Home</a></li>
                         <Link to={"/product1"} onClick={closeMenu}>
                             <li className='btn btn-ghost'><a href="#" className="text-white">Projects</a></li>
                         </Link>

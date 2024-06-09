@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Profile from './Components/Profile'
 import Product from './Components/Product'
 import Footer from './Components/Footer'
+import Login from './Components/Login'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' element={<Hero />} />
           <Route path="/profile1" element={<Profile />} />
           <Route path="/product1" element={<Product />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </>
