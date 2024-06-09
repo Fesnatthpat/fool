@@ -59,7 +59,7 @@ export default function Navtop() {
                     <ul className="hidden md:flex space-x-4">
                         <li className='btn btn-ghost'><a href="#" className="text-white">Home</a></li>
                         <Link to={"/product1"}>
-                            <li className='btn btn-ghost'><a href="#" className="text-white">Product</a></li>
+                            <li className='btn btn-ghost'><a href="#" className="text-white">Projects</a></li>
                         </Link>
                         <li className='btn btn-ghost'><a href="#" className="text-white">Services</a></li>
                         <li className='btn btn-ghost'><a href="#" className="text-white">Contact</a></li>
@@ -89,7 +89,7 @@ export default function Navtop() {
                 {isMenuOpen ? (
                     <ul className="flex-col md:hidden px-5 text-center">
                         <li className='py-2'><a href="#" className="text-white btn btn-ghost">Home</a></li>
-                        <li className='py-2'><a href="#" className="text-white btn btn-ghost">About</a></li>
+                        <li className='py-2'><a href="#" className="text-white btn btn-ghost">Projects</a></li>
                         <li className='py-2'><a href="#" className="text-white btn btn-ghost">Services</a></li>
                         <li className='py-2'><a href="#" className="text-white btn btn-ghost">Contact</a></li>
                     </ul>
