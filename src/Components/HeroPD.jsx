@@ -3,7 +3,7 @@
 export default function HeroPD() {
     return (
         <div>
-            <div className="hero min-h-96 mt-16 bg-base-200 border-2 border-rose-500 ">
+            <div className="hero min-h-96 mt-16 bg-base-200  ">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
                         <h1 className="text-5xl font-bold">Projects To GitHub</h1>
