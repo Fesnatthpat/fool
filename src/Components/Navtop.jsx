@@ -72,8 +72,8 @@ export default function Navtop() {
                         <Link to={"/product1"}>
                             <li className='btn btn-ghost'><a href="#" className="text-white">Projects</a></li>
                         </Link>
-                        <li className='btn btn-ghost'><a href="#" className="text-white">Services</a></li>
-                        <li className='btn btn-ghost'><a href="#" className="text-white">Contact</a></li>
+                        {/* <li className='btn btn-ghost'><a href="#" className="text-white">Services</a></li>
+                        <li className='btn btn-ghost'><a href="#" className="text-white">Contact</a></li> */}
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder" onClick={toggleAvatar}>
                                 <div className="bg-neutral text-neutral-content rounded-full w-12">
@@ -105,8 +105,8 @@ export default function Navtop() {
                         <Link to={"/product1"} onClick={closeMenu}>
                             <li className='btn btn-ghost'><a href="#" className="text-white">Projects</a></li>
                         </Link>
-                        <li className='py-2'><a href="#" className="text-white btn btn-ghost" onClick={closeMenu}>Services</a></li>
-                        <li className='py-2'><a href="#" className="text-white btn btn-ghost" onClick={closeMenu}>Contact</a></li>
+                        {/* <li className='py-2'><a href="#" className="text-white btn btn-ghost" onClick={closeMenu}>Services</a></li>
+                        <li className='py-2'><a href="#" className="text-white btn btn-ghost" onClick={closeMenu}>Contact</a></li> */}
                     </ul>
                 ) : null}
             </nav>
