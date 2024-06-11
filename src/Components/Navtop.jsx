@@ -6,17 +6,24 @@ export default function Navtop() {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [isAvatarOpen, setAvatarOpen] = useState(false);
 
-
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
+        console.log("Menu toggled:", !isMenuOpen);  // ตรวจสอบสถานะการเปลี่ยนแปลง
     };
 
     const closeMenu = () => {
         setMenuOpen(false);
+        console.log("Menu closed");  // ตรวจสอบการเรียกฟังก์ชัน
+    };
+
+    const toggleAvatar = () => {
+        setAvatarOpen(!isAvatarOpen);
+        console.log("Avatar toggled:", !isAvatarOpen);  // ตรวจสอบสถานะการเปลี่ยนแปลง
     };
 
     const closeAvatar = () => {
-        isAvatarOpen(false);
+        setAvatarOpen(false);
+        console.log("Avatar closed");  // ตรวจสอบการเรียกฟังก์ชัน
     };
 
     return (
@@ -26,23 +33,25 @@ export default function Navtop() {
 
                     {/* Avatar */}
                     <div className="dropdown dropdown-start md:hidden">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder">
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder" onClick={toggleAvatar}>
                             <div className="bg-neutral text-neutral-content rounded-full w-12">
                                 <span>SY</span>
                             </div>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li>
-                                <Link to={"/profile1"} onClick={closeAvatar}>
-                                    <div className="justify-between">
-                                        Profile
-                                        <span className="badge">New</span>
-                                    </div>
-                                </Link>
-                            </li>
-                            <li><a onClick={closeAvatar}>Settings</a></li>
-                            <li><a onClick={closeAvatar}>Logout</a></li>
-                        </ul>
+                        {isAvatarOpen && (
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <Link to={"/profile1"} onClick={closeAvatar}>
+                                        <div className="justify-between">
+                                            Profile
+                                            <span className="badge">New</span>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li><a onClick={closeAvatar}>Settings</a></li>
+                                <li><a onClick={closeAvatar}>Logout</a></li>
+                            </ul>
+                        )}
                     </div>
 
                     {/* Logo */}
@@ -66,23 +75,25 @@ export default function Navtop() {
                         <li className='btn btn-ghost'><a href="#" className="text-white">Services</a></li>
                         <li className='btn btn-ghost'><a href="#" className="text-white">Contact</a></li>
                         <div className="dropdown dropdown-end">
-                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder">
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder" onClick={toggleAvatar}>
                                 <div className="bg-neutral text-neutral-content rounded-full w-12">
                                     <span>SY</span>
                                 </div>
                             </div>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li>
-                                    <Link to={"/profile1"} onClick={closeAvatar}>
-                                        <div className="justify-between">
-                                            Profile
-                                            <span className="badge">New</span>
-                                        </div>
-                                    </Link>
-                                </li>
-                                <li><a onClick={closeAvatar}>Settings</a></li>
-                                <li><a onClick={closeAvatar}>Logout</a></li>
-                            </ul>
+                            {isAvatarOpen && (
+                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li>
+                                        <Link to={"/profile1"} onClick={closeAvatar}>
+                                            <div className="justify-between">
+                                                Profile
+                                                <span className="badge">New</span>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                    <li><a onClick={closeAvatar}>Settings</a></li>
+                                    <li><a onClick={closeAvatar}>Logout</a></li>
+                                </ul>
+                            )}
                         </div>
                     </ul>
                 </div>
@@ -100,5 +111,5 @@ export default function Navtop() {
                 ) : null}
             </nav>
         </div>
-    )
+    );
 }
