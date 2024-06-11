@@ -32,7 +32,7 @@ export default function Navtop() {
                 <div className="flex items-center justify-between px-5">
 
                     {/* Avatar */}
-                    <div className="dropdown dropdown-start md:hidden">
+                    <div className="flex-none dropdown dropdown-start md:hidden">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder" onClick={toggleAvatar}>
                             <div className="bg-neutral text-neutral-content rounded-full w-12">
                                 <span>SY</span>
@@ -54,26 +54,30 @@ export default function Navtop() {
                         )}
                     </div>
 
+                    {/* Spacer */}
+                    <div className="flex-grow"></div>
+
                     {/* Logo */}
                     <Link to={"/"}>
                         <div className="btn btn-ghost text-white text-2xl font-bold">F1</div>
                     </Link>
 
+                    {/* Spacer */}
+                    <div className="flex-grow"></div>
+
                     {/* Menu Toggle for Mobile */}
-                    <div className="md:hidden">
+                    <div className="flex-none md:hidden">
                         <button id="menu-toggle" className="text-white btn btn-ghost" onClick={toggleMenu}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                         </button>
                     </div>
 
                     {/* Menu for Laptop */}
-                    <ul className="hidden md:flex space-x-4">
+                    <ul className="hidden md:flex space-x-4 flex-none">
                         <li className='btn btn-ghost'><a href="/" className="text-white">Home</a></li>
                         <Link to={"/product1"}>
                             <li className='btn btn-ghost'><a href="#" className="text-white">Projects</a></li>
                         </Link>
-                        {/* <li className='btn btn-ghost'><a href="#" className="text-white">Services</a></li>
-                        <li className='btn btn-ghost'><a href="#" className="text-white">Contact</a></li> */}
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar placeholder" onClick={toggleAvatar}>
                                 <div className="bg-neutral text-neutral-content rounded-full w-12">
@@ -105,8 +109,6 @@ export default function Navtop() {
                         <Link to={"/product1"} onClick={closeMenu}>
                             <li className='btn btn-ghost'><a href="#" className="text-white">Projects</a></li>
                         </Link>
-                        {/* <li className='py-2'><a href="#" className="text-white btn btn-ghost" onClick={closeMenu}>Services</a></li>
-                        <li className='py-2'><a href="#" className="text-white btn btn-ghost" onClick={closeMenu}>Contact</a></li> */}
                     </ul>
                 ) : null}
             </nav>
