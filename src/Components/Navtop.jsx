@@ -59,7 +59,7 @@ export default function Navtop() {
 
                     {/* Logo */}
                     <Link to={"/"}>
-                        <div className="btn btn-ghost text-white text-2xl w-56  font-bold">F1</div>
+                        <div className="btn btn-ghost text-white text-2xl font-bold">F1</div>
                     </Link>
 
                     {/* Spacer */}
