@@ -55,7 +55,7 @@ export default function Navtop() {
                     </div>
 
                     {/* Spacer */}
-                    <div className="flex-grow"></div>
+                    
 
                     {/* Logo */}
                     <Link to={"/"}>
@@ -63,7 +63,7 @@ export default function Navtop() {
                     </Link>
 
                     {/* Spacer */}
-                    <div className="flex-grow"></div>
+                
 
                     {/* Menu Toggle for Mobile */}
                     <div className="flex-none md:hidden">
