@@ -54,16 +54,10 @@ export default function Navtop() {
                         )}
                     </div>
 
-                    {/* Spacer */}
-                    
-
                     {/* Logo */}
                     <Link to={"/"}>
                         <div className="btn btn-ghost text-white text-2xl font-bold">F1</div>
                     </Link>
-
-                    {/* Spacer */}
-                
 
                     {/* Menu Toggle for Mobile */}
                     <div className="flex-none md:hidden">

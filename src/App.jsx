@@ -7,6 +7,7 @@ import Profile from './Components/Profile'
 import Product from './Components/Product'
 import Footer from './Components/Footer'
 import Login from './Components/Login'
+import Register from './Components/Register'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -21,6 +22,8 @@ function App() {
           <Route path="/profile1" element={<Profile />} />
           <Route path="/product1" element={<Product />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          {/* <Route path="/get_Started" element={<Product />} /> */}
         </Routes>
         <Footer />
       </>
