@@ -2,7 +2,7 @@
 
 export default function Items_Product() {
     return (
-        <div className="min-w-full min-h-screen  flex justify-center items-center">
+        <div className="flex justify-center items-center min-h-screen">
             <div className="flex flex-col md:flex-row w-full max-w-6xl m-2">
                 <div className="w-full md:w-1/2 overflow-hidden">
                     <img 

@@ -1,4 +1,5 @@
 // import React from 'react'
+import { Link } from "react-router-dom"
 
 export default function HeroPD() {
     return (
@@ -9,7 +10,9 @@ export default function HeroPD() {
                     <div className="max-w-md">
                         <h1 className="text-5xl text-white font-bold">Projects To GitHub</h1>
                         <p className="py-6 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <Link to={'/from_pd'}>
+                            <button className="btn btn-primary">Get Post</button>
+                        </Link>
                     </div>
                 </div>
             </div>
