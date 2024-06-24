@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import HeroPD from './HeroPD';
 import './Product.css';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
+import {getdata} from '../Functions/Project'
 
 export default function Product() {
     const [data, setData] = useState([])
-    const [form, setForm] = useState({})
+    
 
     useEffect(() => {
         //code
@@ -14,15 +15,11 @@ export default function Product() {
     }, [])
 
     const loadData = async () => {
-        await axios.get('http://localhost:5000/api/project')
+        getdata()
+        // await axios.get('http://localhost:5000/api/project')
             .then((res) => setData(res.data))
             .catch((err) => console.log(err))
     }
-
-    const handleChange = (e) => {
-
-    }
-
     return (
         <div className="">
             <HeroPD />
@@ -37,8 +34,8 @@ export default function Product() {
                                         {item.name}
                                         <div className="badge badge-secondary">NEW</div>
                                     </h2>
-                                    <p>{item.detall}</p>
-                                    <p>{item.price}</p>
+                                    <p>{item.detail}</p>
+                                    <a>{item.url}</a>
                                     <div className="card-actions justify-end">
                                         <div className="badge badge-outline">Fashion</div>
                                         <div className="badge badge-outline">Products</div>
