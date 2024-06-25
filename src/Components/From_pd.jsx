@@ -28,6 +28,7 @@ export default function From_pd() {
     }
 
     const handleSubmit = async (e) => {
+        e.preventDefault()
         create(form)
         // await axios.post('http://localhost:5000/api/project', form)
             .then(res => {
@@ -52,7 +53,7 @@ export default function From_pd() {
                     <label className="input input-bordered flex items-center gap-2 my-4">
                         <input type="text" name='url' onChange={e => handleChange(e)} className="grow" placeholder="URL" />
                     </label>
-                    <input type="file" className="file-input file-input-bordered file-input-md w-full max-w-xs" />
+                    <input type="file" onChange={e => handleChange(e)} name='file' className="file-input file-input-bordered file-input-md w-full max-w-xs" />
                     <div className="modal-action flex justify-between">
                         <div className='flex'>
                             {/* if there is a button in form, it will close the modal */}

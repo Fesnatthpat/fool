@@ -5,7 +5,7 @@ export const remove = async (id) =>
 
 
 export const create = async (data) => 
-    await axios.post(import.meta.env.VITE_APP_API_URL + 'project', data)
+    await axios.post(import.meta.env.VITE_APP_API_URL + '/project', data)
 
 
 export const getdata = async () => {
